@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <title>KAMABOKO-GACHA</title>
+</head>
+<body>
+    <div class="main">
+        <section id="header">
+            <h1>KAMABOKO GACHA</h1>
+        </section>
+        
+        <section id="pnet">
+            <h2>前提知識（国立かまぼこ大学2年次必修科目：単位数2）</h2>
+            <h3>ブラウザによっては正常に表示できないかもしれません。ごめんなさいっぴ♪</h3>
+            <h3>PC:ティルト・ドラッグ / SP:ピンチ・スワイプ</h3>
+            <div id="net"></div>
+        </section>
+
+        <section id="gacha" class="a">
+            <p>さあ、偉大なるスケトウダラ様に帰依しよう！</p>
+            <div class="gacha"><img src="img/tara.png"></div>
+                <div id="output">
+                    <div class="kekka">
+                        <p id="rare"></p>
+                        <p id="kamaname"></p>
+                        <p id="omikekka"></p>
+                    </div>
+                    <p id="kome"></p>
+                </div>
+                <p>「加工されたくないよ～助けて～😣」</p>
+                <div class="btn">
+                    <p id="btn" onclick="gtag('event', 'click', {'event_category': 'イベント','event_label': 'ガチャ'});">帰依する（無料）</p>
+                </div>
+            
+                <div id="overlay">                 
+                </div>
+            </section>
+
+
+        <section id="footer">
+            <p>参考文献：https://www.kibun.co.jp/knowledge/neri/basics/nani/index.html</p>
+            <p>効果音：https://soundeffect-lab.info/</p>
+            <p>スケトウダラ：https://www.irasutoya.com/</p>
+            <p>言わずもがなジョークです。色々と真に受けないでください。</p>
+            <p>練り物の写真はすべて株式会社紀文食品からの引用です。当該写真の権利は全て株式会社紀文食品に帰属し、権利侵害の目的は御座いません。</p>
+            <h1>THANKS FOR ACCESSING!</h1>
+        </section>
+        <script type="text/javascript" src="script/neon.js"></script>
+        <script type="text/javascript" src="script/net.js"></script> 
+        <script type="text/javascript" src="script/gacha.js"></script>
+    </div>
+</body>
+</html>
